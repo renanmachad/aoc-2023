@@ -8,7 +8,7 @@
 
 <p>
  To run i high recommend that you run this project with the command
- ```
-cargo test
- ```
+ <code>
+ cargo test
+ </code>
 </p>

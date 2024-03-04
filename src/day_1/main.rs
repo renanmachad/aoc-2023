@@ -1,7 +1,7 @@
 use std::{fmt::Debug, fs, u32};
 
 fn main() {
-    let file_contents = match fs::read_to_string("input1.txt") {
+    let file_contents = match fs::read_to_string("input_day_1.txt") {
         Ok(contents) => contents,
         Err(err) => {
             eprintln!("Error reading file: {}", err);

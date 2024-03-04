@@ -39,14 +39,10 @@ mod tests {
 
     #[test]
     fn test_process() {
-        let file_contents = match fs::read_to_string("input1.txt") {
-            Ok(contents) => contents,
-            Err(err) => {
-                eprintln!("Error reading file: {}", err);
-                return; // Exit the program if there's an error
-            }
-        };
-
-        assert_eq!("142", process(file_contents.as_str()));
+       let input:&str ="1abc2
+                        pqr3stu8vwx
+                        a1b2c3d4e5f
+                        treb7uchet";
+        assert_eq!("142", process(input));
     }
 }
